@@ -1,12 +1,16 @@
 import React from 'react'
+import SideBar from './template/SideBar'
+import TopNav from './template/TopNav'
 
 function Home() {
   document.title= "Movie-App | Homepage"
   return (
-    <div>
-      <div className='w-[20%] h-full bg-red-10'></div>
-      <div className='w-[80%] h-full bg-red-300'></div>
-    </div>
+    <>
+    <SideBar/>
+      <div className='w-[80%] h-full'>
+        <TopNav/>
+      </div>
+    </>
   )
 }
 
